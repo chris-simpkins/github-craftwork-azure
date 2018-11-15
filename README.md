@@ -12,5 +12,7 @@ This workshop will teach you how to create a GitHub App that automatically moder
 
 ### Instructions
 
+It's ya boi anomaly from Sveden
+
 Please refer to the [Instructions README](/docs/readme.md)
 

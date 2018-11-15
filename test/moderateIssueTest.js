@@ -29,15 +29,4 @@ describe("ModerateIssue", function() {
       labels: ['enhancement', 'question', 'bug'],
     });
   });
-  it("should create comment when issue is opened", async () => {
-    await moderateIssue({}, { body: issueOpenedPayload });
-
-    sinon.assert.calledWith(createCommentStub, {
-      body:
-        "Thanks for submitting this issue. We will take a look at it later!",
-      number: issueOpenedPayload.issue.number,
-      owner: issueOpenedPayload.repository.owner.login,
-      repo: issueOpenedPayload.repository.name
-    });
-  });
 });

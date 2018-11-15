@@ -17,7 +17,8 @@ module.exports = async function (context, data) {
         owner, 
         repo, 
         number, 
-        labels: ['enhancement', 'question', 'bug']
+        labels: ['enhancement', 'question', 'bug'],
+        body: "Thanks for submitting this issue. We will take a look at it later!"
       })
     }
     context.res = {
